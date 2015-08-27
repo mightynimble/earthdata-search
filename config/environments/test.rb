@@ -41,4 +41,5 @@ EarthdataSearchClient::Application.configure do
   config.url_limit = 130
 
   config.middleware.use RackSessionAccess::Middleware
+  config.cmr_client_id = ENV['cmr_client_id'] || 'edsc-dev'
 end

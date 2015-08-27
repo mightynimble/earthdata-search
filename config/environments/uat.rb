@@ -78,4 +78,6 @@ EarthdataSearchClient::Application.configure do
 
   config.url_limit = 2000
   config.echo_env = 'partnertest'
+
+  config.cmr_client_id = ENV['cmr_client_id'] || 'edsc-prod'
 end
